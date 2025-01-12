@@ -1,7 +1,7 @@
 {
   "name": "capcitor-image-cropper",
-  "version": "0.0.1",
-  "description": "This plugin is used to crop image.",
+  "version": "1.0.0",
+  "description": "A Capacitor plugin for image cropping on Android, leveraging the UCrop library for seamless cropping functionality. iOS support is coming soon!",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -27,7 +27,10 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "ionic",
+    "ucrop",
+    "image-cropper"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",
