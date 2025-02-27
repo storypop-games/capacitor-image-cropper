@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "CapcitorImageCropper",
+    name: "capacitorImageCropper",
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "CapcitorImageCropper",
+            name: "capacitorImageCropper",
             targets: ["ImageCropperPlugin"])
     ],
     dependencies: [
