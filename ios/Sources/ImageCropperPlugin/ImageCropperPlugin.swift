@@ -22,7 +22,7 @@ public class ImageCropperPlugin: CAPPlugin, TOCropViewControllerDelegate {
         let circle = call.getBool("circle") ?? false
 
         DispatchQueue.main.async {
-            let cropViewController = TOCropViewController(image: image)
+            let cropViewController = TOCropViewController(croppingStyle: circle ? TOCropViewCroppingStyle.circular : TOCropViewCroppingStyle.default, image: image)
             cropViewController.delegate = self
             cropViewController.aspectRatioPreset = .presetCustom
             cropViewController.customAspectRatio = CGSize(width: aspectRatioX, height: aspectRatioY)
@@ -31,7 +31,6 @@ public class ImageCropperPlugin: CAPPlugin, TOCropViewControllerDelegate {
             
             if circle {
                 cropViewController.cropView.cropBoxResizeEnabled = false
-                cropViewController.cropView.isCircular = true
             }
 
             self.bridge?.viewController?.present(cropViewController, animated: true)
