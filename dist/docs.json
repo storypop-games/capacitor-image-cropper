@@ -1,0 +1,158 @@
+{
+  "api": {
+    "name": "ImageCropperPlugin",
+    "slug": "imagecropperplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "crop",
+        "signature": "(options: CropOptions) => Promise<CropResult>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "CropOptions"
+          }
+        ],
+        "returns": "Promise<CropResult>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [
+          "CropResult",
+          "CropOptions"
+        ],
+        "slug": "crop"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "CropResult",
+      "slug": "cropresult",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "path",
+          "tags": [],
+          "docs": "The path to the cropped image\nOn Android: content:// or file:// URI\nOn iOS: file:// URI",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "base64",
+          "tags": [],
+          "docs": "Base64 encoded image data (optional, web only)",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "CropOptions",
+      "slug": "cropoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "source",
+          "tags": [],
+          "docs": "The path or url of the image to crop\nCan be a local file path, content:// uri, or file:// uri",
+          "complexTypes": [],
+          "type": "string"
+        },
+        {
+          "name": "quality",
+          "tags": [
+            {
+              "text": "90",
+              "name": "default"
+            }
+          ],
+          "docs": "Quality of the resulting image, between 0-100",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "circle",
+          "tags": [
+            {
+              "text": "false",
+              "name": "default"
+            }
+          ],
+          "docs": "Whether to crop the image in a circle",
+          "complexTypes": [],
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "width",
+          "tags": [
+            {
+              "text": "300",
+              "name": "default"
+            }
+          ],
+          "docs": "Maximum width of the resulting image",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "height",
+          "tags": [
+            {
+              "text": "300",
+              "name": "default"
+            }
+          ],
+          "docs": "Maximum height of the resulting image",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "aspectRatioX",
+          "tags": [
+            {
+              "text": "1",
+              "name": "default"
+            }
+          ],
+          "docs": "Aspect ratio X for crop box (width/height)\ne.g., 1 for square",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "aspectRatioY",
+          "tags": [
+            {
+              "text": "1",
+              "name": "default"
+            }
+          ],
+          "docs": "Aspect ratio Y for crop box (height/width)\ne.g., 1 for square",
+          "complexTypes": [],
+          "type": "number | undefined"
+        },
+        {
+          "name": "activeControlsWidgetColor",
+          "tags": [
+            {
+              "text": "\"#9ef500\"",
+              "name": "default"
+            }
+          ],
+          "docs": "Color of the active controls widget",
+          "complexTypes": [],
+          "type": "string | undefined"
+        }
+      ]
+    }
+  ],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
