@@ -10,8 +10,8 @@
     <application>
         <!-- Add UCrop Activity -->
         <activity
-            android:name="com.yalantis.ucrop.UCropActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+                android:name="com.yalantis.ucrop.UCropActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.App.UCrop"/>
     </application>
 </manifest>

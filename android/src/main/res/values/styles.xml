@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Fix insets for Android 15+ with default edge-to-edge behavior -->
+  <style name="Theme.App.UCrop" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    <item name="android:fitsSystemWindows">true</item>
+  </style>
+
+</resources>
